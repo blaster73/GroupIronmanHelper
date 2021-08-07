@@ -6,17 +6,20 @@ function Todo(props) {
     console.log(props.text);
   }*/
 
-  const userAction = async () => {
-    fetch('https://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player=Killua_blast')
-    .then(response => response.json())
-    .then(data => console.log(data));
+  function deleteHandler() {
+    const { hiscores } = require("osrs-json-api");
+    hiscores.getPlayer("B0aty").then(console.log).catch(console.error);
+
+    //fetch("index_lite.ws?player=Killua_blast")
+      //.then((response) => response.text())
+      //.then((data) => console.log(data));
   }
 
   return (
     <div className="card">
       <h2>{props.text}</h2>
       <div className="actions">
-        <button className="btn" onClick={userAction}>
+        <button className="btn" onClick={deleteHandler}>
           Delete
         </button>
       </div>

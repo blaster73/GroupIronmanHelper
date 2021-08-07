@@ -6,7 +6,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
+    "osrs-json-api": "^1.4.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "^4.0.3"
@@ -17,6 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://secure.runescape.com/m=hiscore_oldschool/",
   "eslintConfig": {
     "extends": "react-app"
   },
