@@ -5,9 +5,7 @@ function App() {
   return (
     <div>
       <h1>Group Ironman</h1>
-        <Todo text='Create Web App' />
-        <Todo text='Start React Code' />
-        <Todo text='Make Website Content...' />
+        <Todo text='Debug Info' />
     </div>
   );
 }

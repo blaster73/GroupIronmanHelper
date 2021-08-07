@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://secure.runescape.com/m=hiscore_oldschool/",
+  "proxy": "https://secure.runescape.com/m=itemdb_oldschool/api/catalogue/",
   "eslintConfig": {
     "extends": "react-app"
   },

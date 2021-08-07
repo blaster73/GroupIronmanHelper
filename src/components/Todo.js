@@ -10,8 +10,12 @@ function Todo(props) {
     //const { hiscores } = require("osrs-json-api");
     //hiscores.getPlayer("B0aty").then(console.log).catch(console.error);
 
-    fetch("index_lite.ws?player=Killua_blast")
-      .then((response) => response.text())
+    //fetch("index_lite.ws?player=Killua_blast")
+      //.then((response) => response.text())
+      //.then((data) => console.log(data));
+
+    fetch("detail.json?item=556")
+      .then((response) => response.json())
       .then((data) => console.log(data));
   }
 
@@ -20,7 +24,7 @@ function Todo(props) {
       <h2>{props.text}</h2>
       <div className="actions">
         <button className="btn" onClick={deleteHandler}>
-          Delete
+          Console Log
         </button>
       </div>
     </div>
