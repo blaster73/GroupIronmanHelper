@@ -7,12 +7,12 @@ function Todo(props) {
   }*/
 
   function deleteHandler() {
-    const { hiscores } = require("osrs-json-api");
-    hiscores.getPlayer("B0aty").then(console.log).catch(console.error);
+    //const { hiscores } = require("osrs-json-api");
+    //hiscores.getPlayer("B0aty").then(console.log).catch(console.error);
 
-    //fetch("index_lite.ws?player=Killua_blast")
-      //.then((response) => response.text())
-      //.then((data) => console.log(data));
+    fetch("index_lite.ws?player=Killua_blast")
+      .then((response) => response.text())
+      .then((data) => console.log(data));
   }
 
   return (
