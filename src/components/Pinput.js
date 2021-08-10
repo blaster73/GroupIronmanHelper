@@ -1,12 +1,8 @@
 import React from "react";
 
-function Todo(props) {
-  /*function deleteHandler() {
-    console.log("Clicked Here");
-    console.log(props.text);
-  }*/
+function Pinput(props) {
 
-  function deleteHandler() {
+  function getPlayer() {
     fetch("https://gimapi.azurewebsites.net/player?pid=Golemantium")
       .then((response) => response.json())
       .then((data) => console.log(data));
@@ -16,12 +12,13 @@ function Todo(props) {
     <div className="card">
       <h2>{props.text}</h2>
       <div className="actions">
-        <button className="btn" onClick={deleteHandler}>
-          Console Log
+        <button className="btn" onClick={getPlayer}>
+          Get Player Stats
         </button>
+        <input type="text" value="Player Name" />
       </div>
     </div>
   );
 }
 
-export default Todo;
+export default Pinput;
