@@ -5,8 +5,10 @@
     align-items: center;
     justify-content: space-between;
     background-color: #e2dbc8;
+    /*background:url(https://i.ytimg.com/vi/LOYzfmtgb0g/maxresdefault.jpg) no-repeat center center fixed;
+    background-size: cover;*/
     border-style: solid;
-    padding: 10% 5%;
+    padding: 0 5%;
   }
   
   .logo {
